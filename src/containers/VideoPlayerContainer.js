@@ -5,6 +5,8 @@ var mapStateToProps = (state) => ({
   video: state.currentVideo
 });
 
+
+
 var VideoPlayerContainer = connect(mapStateToProps, null)(VideoPlayer);
 
 //TODO: define a VideoPlayerContainer component which will hook up your action

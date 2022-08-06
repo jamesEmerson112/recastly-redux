@@ -4,6 +4,12 @@ import handleSearchChange from '../actions/search.js';
 
 var mapStateToProps = (state) => ({});
 
+var mapDispatchToProps = (dispatch) => {
+  handleInputChage: (q) => {
+    dispatch(handleInputChage(q));
+  };
+};
+
 var SearchContainer = connect(mapStateToProps, null)(Search);
 
 //TODO: define a SearchContainer component which will hook up your action
